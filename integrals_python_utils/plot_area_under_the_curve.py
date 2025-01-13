@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import quad
 
-LOWER_LIMIT = -1
-UPPER_LIMIT = 2
+LOWER_LIMIT = 0
+UPPER_LIMIT = 0.8
 
 # Define the function
 
@@ -12,6 +12,9 @@ UPPER_LIMIT = 2
 def f(x):
     return (x**2 - 1) * np.exp(x**3 - 3*x)
 
+
+def f(x):
+    return np.exp(-3*x)
 
 # Define the x range and calculate y
 x = np.linspace(-4, 2, 500)
